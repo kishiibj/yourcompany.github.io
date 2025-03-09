@@ -1,0 +1,71 @@
+html
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>不動産会社のホームページ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        .property-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .property {
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 10px;
+            width: calc(33.33% - 20px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>不動産会社名</h1>
+        <nav>
+            <a href="#about">会社概要</a> | 
+            <a href="#properties">物件一覧</a> | 
+            <a href="#contact">お問い合わせ</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="about">
+            <h2>会社概要</h2>
+            <p>当社は地域に根ざした不動産会社です。</p>
+        </section>
+        <section id="properties">
+            <h2>物件一覧</h2>
+            <div class="property-list">
+                <div class="property">
+                    <h3>物件名1</h3>
+                    <p>所在地: 東京都○○区</p>
+                    <p>価格: 〇〇万円</p>
+                </div>
+                <div class="property">
+                    <h3>物件名2</h3>
+                    <p>所在地: 大阪府△△市</p>
+                    <p>価格: △△万円</p>
+                </div>
+                <!-- 他の物件を追加 -->
+            </div>
+        </section>
+        <section id="contact">
+            <h2>お問い合わせ</h2>
+            <p>お問い合わせはメールまたはお電話でどうぞ。</p>
+        </section>
+    </div>
+</body>
+</html>
